@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srinivas P | Java Developer</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f2027;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* PARTICLES BACKGROUND */
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    top:0;
+    left:0;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav h2{
+    color:#00f2fe;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00f2fe;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    background:linear-gradient(to right,#00f2fe,#4facfe);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.typing{
+    color:#00f2fe;
+    font-weight:bold;
+    font-size:22px;
+    margin-top:10px;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#00f2fe;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* SECTIONS */
+section{
+    padding:100px 50px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+    color:#00f2fe;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:30px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.skills span{
+    display:inline-block;
+    background:#00f2fe;
+    color:black;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+}
+
+a{
+    color:#00f2fe;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+    nav ul{
+        margin-top:10px;
+    }
+    .hero h1{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<nav>
+    <h2>SRINIVAS P</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Hi, I'm Srinivas 👋</h1>
+    <div class="typing" id="typing"></div>
+    <button class="btn" onclick="window.open('#contact')">contact</button>
+</div>
+
+<section id="about" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        Passionate Java Developer with strong knowledge in Data Structures and Web Technologies.
+        CGPA: 8.1 | B.Tech IT Student.
+        Focused on building scalable and innovative applications.
+    </div>
+</section>
+
+<section id="projects" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="card">
+        <h3>Weather Forecasting System</h3>
+       The Weather Forecasting System is a web application that provides real-time weather updates along with pollen count and Air Quality Index (AQI) information. It helps users stay informed about environmental conditions and make health-conscious decisions. The application features a responsive user interface for easy access to weather data. Java is used for backend processing, while HTML, JSF, and JavaScript handle the frontend functionality. SQL is integrated to manage and retrieve environmental data efficiently.
+
+<br>Tech Stack: HTML, JSF, Java, JavaScript, SQL.</br>
+    </div>
+    <div class="card">
+        <h3>Laventa E-Commerce Website</h3>
+       The Laventa E-Commerce Website is a responsive fashion-based online store designed to provide a smooth and engaging shopping experience. It allows users to browse products through organized categories and detailed product listings. Interactive features such as image sliders and filters enhance product exploration. A dynamic shopping cart system enables users to add, remove, and manage items easily. The project was developed using HTML, CSS, and JavaScript to ensure responsiveness and user-friendly design.<br>
+        Tech: HTML, CSS, JavaScript
+    </div>
+</section>
+
+<section id="skills" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <span>Java</span>
+        <span>DSA</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>MySQL</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+        📧 karthikarthinivas@gmail.com <br><br>
+        📞 +91 9360957586 <br><br>
+        🔗 <a href="https://www.linkedin.com/in/srinivaspoovalingam/">LinkedIn</a><br>
+        💻 <a href="https://github.com/Srinivas198269">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Srinivas P. All rights reserved.
+    <br>Built with passion for clean code and web development.</br>
+</footer>
+
+<!-- JS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+new Typed("#typing", {
+    strings: ["Java Developer", "Full Stack Enthusiast", "Problem Solver"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+});
+
+AOS.init();
+
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: { enable: true }
+  }
+});
+</script>
+
+</body>
+</html>
